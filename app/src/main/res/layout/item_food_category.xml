@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="61dp"
+    android:layout_height="84dp"
+    android:layout_marginHorizontal="13dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/category_image_view"
+        android:layout_width="61dp"
+        android:layout_height="56dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/CornerRadius50Percent"
+        tools:src="@drawable/onboarding_background_image" />
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:text="@tools:sample/lorem" />
+
+</LinearLayout>
